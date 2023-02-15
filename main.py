@@ -1,3 +1,5 @@
-print("Hello World")
+import os
 
-print(5)
+#Create File:
+
+file = "file.txt"
