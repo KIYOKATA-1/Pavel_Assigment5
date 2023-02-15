@@ -59,3 +59,13 @@ def rename():
 
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
+
+#Delete:
+
+def delete():
+    if os.path.exists(file):
+        os.rename(file)
+        print("𝐅𝐈𝐋𝐄 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐃𝐄𝐋𝐄𝐓𝐄𝐃")
+    else:
+        print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
+
