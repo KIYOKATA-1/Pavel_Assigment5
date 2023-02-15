@@ -23,3 +23,10 @@ def menu():
         print(f"{option}. {menu[option]}")
     return input("Ｃｈｏｓｅ Ｏｐｔｉｏｎ")
 
+#Create File
+def create_file():
+    if os.path.exists(file):
+        print("••🅵🅸🅻🅴 🅸🆂 🅰🅻🆁🅴🅰🅳🆈 🅴🆇🅸🆂🆃•••")
+    else:
+        with open(file, "w") as f:
+            print("ꜰɪʟᴇ ʜᴀꜱ ʙᴇᴇɴ ᴄʀᴇᴀᴛᴇᴅ ✔")
