@@ -42,3 +42,12 @@ def add():
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
 
+#Read:
+
+def read():
+    if os.path.exists(file):
+        with open(file, "r") as f:
+            print(f.read())
+    else:
+        print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
+
