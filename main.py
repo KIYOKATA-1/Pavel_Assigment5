@@ -6,7 +6,7 @@ file = "file.txt"
 
 #Create Menu with Options:
 
-menu = {
+option_menu = {
   "1": "Create File",
   "2": "Add Data",
   "3": "Read",
@@ -68,3 +68,23 @@ def delete():
         print("𝐅𝐈𝐋𝐄 𝐇𝐀𝐒 𝐁𝐄𝐄𝐍 𝐃𝐄𝐋𝐄𝐓𝐄𝐃")
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
+
+#Define Main Function:
+
+def main():
+    while True:
+        option = menu()
+        if option == "1":
+            create_file()
+        elif option == "2":
+            add()
+        elif option == "3":
+            read()
+        elif option == "4":
+            rename()
+        elif option == "5":
+            delete()
+        elif option == "6":
+            break
+        else:
+            print("𝐈𝐧𝐯𝐚𝐥𝐢𝐝 𝐒𝐲𝐧𝐭𝐚𝐱!!!")
