@@ -1,10 +1,10 @@
 import os
 
-#Create File:
+#Create File/Файл жасау:
 
 file = "file.txt"
 
-#Create Menu with Options:
+#Create Menu with Options/Параметрлері бар мәзір жасау:
 
 option_menu = {
   "1": "Create File",
@@ -15,7 +15,7 @@ option_menu = {
   "6": "Exit"
 }
 
-#Function for get user input:
+#Function for get user input/Пайдаланушы енгізуін алуға арналған функция:
 
 def menu():
     print("\n•••••••MENU•••••••")
@@ -23,7 +23,7 @@ def menu():
         print(f"{option}. {menu[option]}")
     return input("Ｃｈｏｓｅ Ｏｐｔｉｏｎ")
 
-#Create File
+#Create/Жасау
 def create_file():
     if os.path.exists(file):
         print("••🅵🅸🅻🅴 🅸🆂 🅰🅻🆁🅴🅰🅳🆈 🅴🆇🅸🆂🆃•••")
@@ -31,7 +31,7 @@ def create_file():
         with open(file, "w") as f:
             print("ꜰɪʟᴇ ʜᴀꜱ ʙᴇᴇɴ ᴄʀᴇᴀᴛᴇᴅ ✔")
 
-#Add Data:
+#Add Data/Деректерді қосу:
 
 def add():
     if os.path.exists(file):
@@ -42,7 +42,7 @@ def add():
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
 
-#Read:
+#Read/Оку:
 
 def read():
     if os.path.exists(file):
@@ -60,7 +60,7 @@ def rename():
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
 
-#Delete:
+#Delete/Жою:
 
 def delete():
     if os.path.exists(file):
@@ -69,7 +69,7 @@ def delete():
     else:
         print("𝙁𝙞𝙡𝙚 𝙙𝙤𝙚𝙨𝙣'𝙩 𝙀𝙭𝙞𝙨𝙩")
 
-#Define Main Function:
+#Define Main Function/Негізгі функцияны анықтаңыз:
 
 def main():
     while True:
